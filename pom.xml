@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.farplace.farpush</groupId>
+    <artifactId>farplace</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>farplace</name>
+    <description>FarPush for Spring Boot</description>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons</groupId>
+            <artifactId>codec</artifactId>
+            <version>1.12</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/commons-codec-1.12.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>conscrypt</groupId>
+            <artifactId>uber</artifactId>
+            <version>2.1.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/conscrypt-openjdk-uber-2.1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>json-simple</groupId>
+            <artifactId>json</artifactId>
+            <version>1.1</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/json-simple-1.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>MiPush</groupId>
+            <artifactId>MiPush</artifactId>
+            <version>1.0.11</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/MiPush_SDK_Server_Http2_1.0.11.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>Okhttp</groupId>
+            <artifactId>Okhttp</artifactId>
+            <version>3.14.2</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/okhttp-3.14.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>Okio</groupId>
+            <artifactId>Okio</artifactId>
+            <version>1.17.2</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/okio-1.17.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>Oppo</groupId>
+            <artifactId>push</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/opush-server-sdk.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>http</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/httpclient-4.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>http</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.1</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/httpcore-4.4.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>http</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.5</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/httpclient-4.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.66</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/libs/fastjson-1.2.66.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.9</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.tencent.xinge/xinge -->
+        <dependency>
+            <groupId>io.github.tpnsPush</groupId>
+            <artifactId>xinge</artifactId>
+            <version>1.2.4.14</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.google.firebase/firebase-admin -->
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>9.2.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
